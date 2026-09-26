@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "A-BLAST: Accelerated Broad Learning System–Transformer Hybrid Model for Long-Term Water Demand Prediction"
-message: "If you use this software, please cite the associated MethodsX article once published."
+title: "A-BLAST: Accelerated Broad Learning System–Transformer for Long-Term Water Demand Prediction"
+message: "If you use this repository, please cite the associated MethodsX article once published."
 type: software
 authors:
   - family-names: Kamal
@@ -13,7 +13,5 @@ authors:
     given-names: Muhammad Udin Harun
   - family-names: Riyadi
     given-names: Michael Angello Qadosy
-repository-code: "https://github.com/<username>/A-BLAST-water-demand"
+repository-code: "https://github.com/kamaltelyu/A-BLAST-water-demand"
 license: MIT
-version: 0.1.0
-date-released: 2026-09-26
