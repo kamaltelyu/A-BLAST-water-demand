@@ -1,0 +1,5 @@
+Comparison	Metric	Test	p-value	Interpretation
+A-BLAST vs BLS	MSE	Wilcoxon signed-rank	0.1953	Not significant
+A-BLAST vs Transformer	MSE	Wilcoxon signed-rank	0.0078	Significant
+A-BLAST vs BLS	MAE	Wilcoxon signed-rank	0.0078	Significant
+A-BLAST vs Transformer	MAE	Wilcoxon signed-rank	0.0078	Significant

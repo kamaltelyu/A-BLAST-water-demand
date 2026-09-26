@@ -1,0 +1,4 @@
+Model	Average_training_time_s	Average_prediction_time_s	Average_total_time_s
+A-BLAST	1.008546625	0.010434	1.018980625
+BLS	0.01535225	0.00095825	0.016310499999999988
+Transformer	159.317690875	0.034529625	159.35222050000002
