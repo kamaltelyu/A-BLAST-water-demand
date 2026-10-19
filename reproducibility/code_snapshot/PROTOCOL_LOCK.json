@@ -1,0 +1,37 @@
+{
+  "version": "3.2-methodsx-final-rolling-origin",
+  "status": "LOCKED_FOR_FINAL_RERUN",
+  "chronological_split": [0.70, 0.15, 0.15],
+  "lookback_days": 365,
+  "forecast_horizons_days": [96, 192, 336, 720],
+  "test_origins_per_horizon": 5,
+  "test_origin_selection": "five evenly spaced feasible forecast starts inside the held-out test interval, inclusive of earliest and latest feasible starts",
+  "test_model_policy": "fit once on train+validation for each dataset x horizon x model x seed; keep model fixed across all test origins",
+  "later_origin_inputs": "earlier observed test values may enter only as past history at later forecast origins; no test-period refitting",
+  "stl": {
+    "period": 365,
+    "robust": true,
+    "history_only_at_each_origin": true,
+    "future_target_values_allowed": false
+  },
+  "components": ["trend", "seasonal"],
+  "residual_modeled": false,
+  "seeds": [11, 22, 33, 44, 55],
+  "max_training_windows": 5000,
+  "metrics": ["MSE", "MAE", "RMSE"],
+  "table1_summary": "average seeds within each rolling origin, then mean +/- SD across five temporal origins",
+  "table3_comparison": "unit-free paired percentage change matched by dataset x horizon x origin x seed; descriptive only",
+  "ablast_transformer_block": "seeded fixed sequence-aware attention/Transformer feature transformation; not gradient-trained",
+  "ridge_lambda_validation_grid": [1e-5, 0.001, 0.1],
+  "hyperparameter_policy": "ridge lambda selected on validation only; architecture fixed a priori",
+  "timing": {
+    "clock": "time.perf_counter",
+    "cuda_sync": true,
+    "inference_warmup": 3,
+    "inference_repeats_per_origin": 20,
+    "training_timed_once_per_seed_level_model": true,
+    "common_stl_preprocessing_included": false
+  },
+  "ablation_horizon": 96,
+  "ablation_origins": 5
+}

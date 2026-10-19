@@ -1,0 +1,336 @@
+2026-10-16 22:07:43,340 | INFO | ==== A-BLAST MethodsX v3.2 fixed-model rolling-origin run/resume session started ====
+2026-10-16 22:07:43,341 | INFO | Output root: /content/drive/MyDrive/A-BLAST_MethodsX_Rerun_v3_2_FINAL/A-BLAST_MethodsX_RESULTS_v3_2
+2026-10-16 22:07:43,341 | INFO | Mode: RESUME-SAFE
+2026-10-16 22:07:43,390 | INFO | Protocol: {"train_ratio": 0.7, "val_ratio": 0.15, "lookback": 365, "stl_period": 365, "stl_robust": true, "horizons": [96, 192, 336, 720], "seeds": [11, 22, 33, 44, 55], "n_test_origins": 5, "max_train_samples": 5000, "ridge_grid": [1e-05, 0.001, 0.1], "feature_nodes": 64, "enhancement_nodes": 32, "n_heads": 4, "num_layers": 1, "ff_dim": 128, "dropout": 0.1, "transformer_d_model": 32, "transformer_heads": 4, "transformer_layers": 1, "transformer_ff_dim": 64, "transformer_dropout": 0.1, "transformer_lr": 0.001, "transformer_batch_size": 64, "transformer_max_epochs": 50, "transformer_patience": 5, "selection_seed": 42, "inference_warmup": 3, "inference_repeats": 20, "ablation_horizon": 96}
+2026-10-16 22:07:43,390 | INFO | Environment: {"platform": "Linux-6.6.122+-x86_64-with-glibc2.39", "os": "Linux", "os_release": "6.6.122+", "python": "3.13.15", "torch": "2.11.0+cu130", "numpy": "2.1.3", "pandas": "2.2.3", "device": "cuda", "cuda_version": "13.0", "cpu": "x86_64", "ram_total_gb": 12.671, "cpu_logical_count": 2, "cpu_physical_count": 1, "gpu": "Tesla T4", "gpu_total_memory_gb": 14.563, "scikit_learn": "1.6.1", "statsmodels": "0.15.0", "scipy": "1.16.3", "matplotlib": "3.10.0"}
+2026-10-16 22:07:43,390 | INFO | Downloading exact public datasets automatically...
+2026-10-16 22:07:54,259 | INFO | Running Chennai main experiments...
+2026-10-16 22:11:59,745 | INFO | Chennai H=96 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 22:12:00,236 | INFO | RUN: Chennai | H=96 | BLS | seed=11 | 5 rolling origins
+2026-10-16 22:12:00,716 | INFO | CHECKPOINT saved: Chennai | H=96 | BLS | seed=11 | origins=5
+2026-10-16 22:12:00,719 | INFO | RUN: Chennai | H=96 | BLS | seed=22 | 5 rolling origins
+2026-10-16 22:12:01,184 | INFO | CHECKPOINT saved: Chennai | H=96 | BLS | seed=22 | origins=5
+2026-10-16 22:12:01,189 | INFO | RUN: Chennai | H=96 | BLS | seed=33 | 5 rolling origins
+2026-10-16 22:12:01,666 | INFO | CHECKPOINT saved: Chennai | H=96 | BLS | seed=33 | origins=5
+2026-10-16 22:12:01,672 | INFO | RUN: Chennai | H=96 | BLS | seed=44 | 5 rolling origins
+2026-10-16 22:12:02,153 | INFO | CHECKPOINT saved: Chennai | H=96 | BLS | seed=44 | origins=5
+2026-10-16 22:12:02,159 | INFO | RUN: Chennai | H=96 | BLS | seed=55 | 5 rolling origins
+2026-10-16 22:12:02,644 | INFO | CHECKPOINT saved: Chennai | H=96 | BLS | seed=55 | origins=5
+2026-10-16 22:12:02,645 | INFO | Chennai H=96 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 22:12:02,662 | INFO | RUN: Chennai | H=96 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 22:12:46,731 | INFO | CHECKPOINT saved: Chennai | H=96 | Transformer | seed=11 | origins=5
+2026-10-16 22:12:46,736 | INFO | RUN: Chennai | H=96 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 22:13:15,149 | INFO | CHECKPOINT saved: Chennai | H=96 | Transformer | seed=22 | origins=5
+2026-10-16 22:13:15,155 | INFO | RUN: Chennai | H=96 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 22:13:46,069 | INFO | CHECKPOINT saved: Chennai | H=96 | Transformer | seed=33 | origins=5
+2026-10-16 22:13:46,076 | INFO | RUN: Chennai | H=96 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 22:14:07,526 | INFO | CHECKPOINT saved: Chennai | H=96 | Transformer | seed=44 | origins=5
+2026-10-16 22:14:07,533 | INFO | RUN: Chennai | H=96 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 22:14:23,085 | INFO | CHECKPOINT saved: Chennai | H=96 | Transformer | seed=55 | origins=5
+2026-10-16 22:14:23,086 | INFO | Chennai H=96 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 22:14:36,257 | INFO | RUN: Chennai | H=96 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 22:14:42,304 | INFO | CHECKPOINT saved: Chennai | H=96 | A-BLAST | seed=11 | origins=5
+2026-10-16 22:14:42,313 | INFO | RUN: Chennai | H=96 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 22:14:48,240 | INFO | CHECKPOINT saved: Chennai | H=96 | A-BLAST | seed=22 | origins=5
+2026-10-16 22:14:48,246 | INFO | RUN: Chennai | H=96 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 22:14:54,225 | INFO | CHECKPOINT saved: Chennai | H=96 | A-BLAST | seed=33 | origins=5
+2026-10-16 22:14:54,231 | INFO | RUN: Chennai | H=96 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 22:15:00,239 | INFO | CHECKPOINT saved: Chennai | H=96 | A-BLAST | seed=44 | origins=5
+2026-10-16 22:15:00,247 | INFO | RUN: Chennai | H=96 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 22:15:06,295 | INFO | CHECKPOINT saved: Chennai | H=96 | A-BLAST | seed=55 | origins=5
+2026-10-16 22:15:06,344 | INFO | Chennai H=192 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 22:15:06,849 | INFO | RUN: Chennai | H=192 | BLS | seed=11 | 5 rolling origins
+2026-10-16 22:15:07,495 | INFO | CHECKPOINT saved: Chennai | H=192 | BLS | seed=11 | origins=5
+2026-10-16 22:15:07,503 | INFO | RUN: Chennai | H=192 | BLS | seed=22 | 5 rolling origins
+2026-10-16 22:15:08,149 | INFO | CHECKPOINT saved: Chennai | H=192 | BLS | seed=22 | origins=5
+2026-10-16 22:15:08,157 | INFO | RUN: Chennai | H=192 | BLS | seed=33 | 5 rolling origins
+2026-10-16 22:15:08,832 | INFO | CHECKPOINT saved: Chennai | H=192 | BLS | seed=33 | origins=5
+2026-10-16 22:15:08,840 | INFO | RUN: Chennai | H=192 | BLS | seed=44 | 5 rolling origins
+2026-10-16 22:15:09,447 | INFO | CHECKPOINT saved: Chennai | H=192 | BLS | seed=44 | origins=5
+2026-10-16 22:15:09,456 | INFO | RUN: Chennai | H=192 | BLS | seed=55 | 5 rolling origins
+2026-10-16 22:15:10,127 | INFO | CHECKPOINT saved: Chennai | H=192 | BLS | seed=55 | origins=5
+2026-10-16 22:15:10,128 | INFO | Chennai H=192 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 22:15:10,148 | INFO | RUN: Chennai | H=192 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 22:15:34,667 | INFO | CHECKPOINT saved: Chennai | H=192 | Transformer | seed=11 | origins=5
+2026-10-16 22:15:34,677 | INFO | RUN: Chennai | H=192 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 22:16:03,474 | INFO | CHECKPOINT saved: Chennai | H=192 | Transformer | seed=22 | origins=5
+2026-10-16 22:16:03,483 | INFO | RUN: Chennai | H=192 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 22:16:20,594 | INFO | CHECKPOINT saved: Chennai | H=192 | Transformer | seed=33 | origins=5
+2026-10-16 22:16:20,604 | INFO | RUN: Chennai | H=192 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 22:17:02,829 | INFO | CHECKPOINT saved: Chennai | H=192 | Transformer | seed=44 | origins=5
+2026-10-16 22:17:02,841 | INFO | RUN: Chennai | H=192 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 22:17:20,158 | INFO | CHECKPOINT saved: Chennai | H=192 | Transformer | seed=55 | origins=5
+2026-10-16 22:17:20,159 | INFO | Chennai H=192 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 22:17:32,926 | INFO | RUN: Chennai | H=192 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 22:17:39,077 | INFO | CHECKPOINT saved: Chennai | H=192 | A-BLAST | seed=11 | origins=5
+2026-10-16 22:17:39,091 | INFO | RUN: Chennai | H=192 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 22:17:45,254 | INFO | CHECKPOINT saved: Chennai | H=192 | A-BLAST | seed=22 | origins=5
+2026-10-16 22:17:45,265 | INFO | RUN: Chennai | H=192 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 22:17:51,389 | INFO | CHECKPOINT saved: Chennai | H=192 | A-BLAST | seed=33 | origins=5
+2026-10-16 22:17:51,401 | INFO | RUN: Chennai | H=192 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 22:17:57,608 | INFO | CHECKPOINT saved: Chennai | H=192 | A-BLAST | seed=44 | origins=5
+2026-10-16 22:17:57,619 | INFO | RUN: Chennai | H=192 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 22:18:03,856 | INFO | CHECKPOINT saved: Chennai | H=192 | A-BLAST | seed=55 | origins=5
+2026-10-16 22:18:03,905 | INFO | Chennai H=336 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 22:18:04,401 | INFO | RUN: Chennai | H=336 | BLS | seed=11 | 5 rolling origins
+2026-10-16 22:18:05,257 | INFO | CHECKPOINT saved: Chennai | H=336 | BLS | seed=11 | origins=5
+2026-10-16 22:18:05,269 | INFO | RUN: Chennai | H=336 | BLS | seed=22 | 5 rolling origins
+2026-10-16 22:18:06,171 | INFO | CHECKPOINT saved: Chennai | H=336 | BLS | seed=22 | origins=5
+2026-10-16 22:18:06,185 | INFO | RUN: Chennai | H=336 | BLS | seed=33 | 5 rolling origins
+2026-10-16 22:18:07,097 | INFO | CHECKPOINT saved: Chennai | H=336 | BLS | seed=33 | origins=5
+2026-10-16 22:18:07,110 | INFO | RUN: Chennai | H=336 | BLS | seed=44 | 5 rolling origins
+2026-10-16 22:18:08,037 | INFO | CHECKPOINT saved: Chennai | H=336 | BLS | seed=44 | origins=5
+2026-10-16 22:18:08,051 | INFO | RUN: Chennai | H=336 | BLS | seed=55 | 5 rolling origins
+2026-10-16 22:18:09,009 | INFO | CHECKPOINT saved: Chennai | H=336 | BLS | seed=55 | origins=5
+2026-10-16 22:18:09,009 | INFO | Chennai H=336 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 22:18:09,038 | INFO | RUN: Chennai | H=336 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 22:18:55,439 | INFO | CHECKPOINT saved: Chennai | H=336 | Transformer | seed=11 | origins=5
+2026-10-16 22:18:55,456 | INFO | RUN: Chennai | H=336 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 22:19:26,147 | INFO | CHECKPOINT saved: Chennai | H=336 | Transformer | seed=22 | origins=5
+2026-10-16 22:19:26,163 | INFO | RUN: Chennai | H=336 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 22:19:45,068 | INFO | CHECKPOINT saved: Chennai | H=336 | Transformer | seed=33 | origins=5
+2026-10-16 22:19:45,085 | INFO | RUN: Chennai | H=336 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 22:20:35,594 | INFO | CHECKPOINT saved: Chennai | H=336 | Transformer | seed=44 | origins=5
+2026-10-16 22:20:35,612 | INFO | RUN: Chennai | H=336 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 22:20:54,496 | INFO | CHECKPOINT saved: Chennai | H=336 | Transformer | seed=55 | origins=5
+2026-10-16 22:20:54,497 | INFO | Chennai H=336 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 22:21:06,709 | INFO | RUN: Chennai | H=336 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 22:21:13,113 | INFO | CHECKPOINT saved: Chennai | H=336 | A-BLAST | seed=11 | origins=5
+2026-10-16 22:21:13,132 | INFO | RUN: Chennai | H=336 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 22:21:19,456 | INFO | CHECKPOINT saved: Chennai | H=336 | A-BLAST | seed=22 | origins=5
+2026-10-16 22:21:19,476 | INFO | RUN: Chennai | H=336 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 22:21:25,866 | INFO | CHECKPOINT saved: Chennai | H=336 | A-BLAST | seed=33 | origins=5
+2026-10-16 22:21:25,885 | INFO | RUN: Chennai | H=336 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 22:21:32,240 | INFO | CHECKPOINT saved: Chennai | H=336 | A-BLAST | seed=44 | origins=5
+2026-10-16 22:21:32,260 | INFO | RUN: Chennai | H=336 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 22:21:38,718 | INFO | CHECKPOINT saved: Chennai | H=336 | A-BLAST | seed=55 | origins=5
+2026-10-16 22:21:38,760 | INFO | Chennai H=720 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 22:21:39,364 | INFO | RUN: Chennai | H=720 | BLS | seed=11 | 5 rolling origins
+2026-10-16 22:21:40,675 | INFO | CHECKPOINT saved: Chennai | H=720 | BLS | seed=11 | origins=5
+2026-10-16 22:21:40,714 | INFO | RUN: Chennai | H=720 | BLS | seed=22 | 5 rolling origins
+2026-10-16 22:21:42,085 | INFO | CHECKPOINT saved: Chennai | H=720 | BLS | seed=22 | origins=5
+2026-10-16 22:21:42,111 | INFO | RUN: Chennai | H=720 | BLS | seed=33 | 5 rolling origins
+2026-10-16 22:21:43,564 | INFO | CHECKPOINT saved: Chennai | H=720 | BLS | seed=33 | origins=5
+2026-10-16 22:21:43,597 | INFO | RUN: Chennai | H=720 | BLS | seed=44 | 5 rolling origins
+2026-10-16 22:21:45,084 | INFO | CHECKPOINT saved: Chennai | H=720 | BLS | seed=44 | origins=5
+2026-10-16 22:21:45,110 | INFO | RUN: Chennai | H=720 | BLS | seed=55 | 5 rolling origins
+2026-10-16 22:21:46,669 | INFO | CHECKPOINT saved: Chennai | H=720 | BLS | seed=55 | origins=5
+2026-10-16 22:21:46,669 | INFO | Chennai H=720 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 22:21:46,711 | INFO | RUN: Chennai | H=720 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 22:22:00,619 | INFO | CHECKPOINT saved: Chennai | H=720 | Transformer | seed=11 | origins=5
+2026-10-16 22:22:00,651 | INFO | RUN: Chennai | H=720 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 22:22:36,071 | INFO | CHECKPOINT saved: Chennai | H=720 | Transformer | seed=22 | origins=5
+2026-10-16 22:22:36,104 | INFO | RUN: Chennai | H=720 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 22:23:24,142 | INFO | CHECKPOINT saved: Chennai | H=720 | Transformer | seed=33 | origins=5
+2026-10-16 22:23:24,174 | INFO | RUN: Chennai | H=720 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 22:23:38,036 | INFO | CHECKPOINT saved: Chennai | H=720 | Transformer | seed=44 | origins=5
+2026-10-16 22:23:38,067 | INFO | RUN: Chennai | H=720 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 22:24:10,554 | INFO | CHECKPOINT saved: Chennai | H=720 | Transformer | seed=55 | origins=5
+2026-10-16 22:24:10,555 | INFO | Chennai H=720 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 22:24:21,719 | INFO | RUN: Chennai | H=720 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 22:24:28,541 | INFO | CHECKPOINT saved: Chennai | H=720 | A-BLAST | seed=11 | origins=5
+2026-10-16 22:24:28,580 | INFO | RUN: Chennai | H=720 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 22:24:35,192 | INFO | CHECKPOINT saved: Chennai | H=720 | A-BLAST | seed=22 | origins=5
+2026-10-16 22:24:35,228 | INFO | RUN: Chennai | H=720 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 22:24:42,171 | INFO | CHECKPOINT saved: Chennai | H=720 | A-BLAST | seed=33 | origins=5
+2026-10-16 22:24:42,211 | INFO | RUN: Chennai | H=720 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 22:24:49,191 | INFO | CHECKPOINT saved: Chennai | H=720 | A-BLAST | seed=44 | origins=5
+2026-10-16 22:24:49,232 | INFO | RUN: Chennai | H=720 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 22:24:56,072 | INFO | CHECKPOINT saved: Chennai | H=720 | A-BLAST | seed=55 | origins=5
+2026-10-16 22:24:57,828 | INFO | Running Chennai rolling-origin architectural ablation...
+2026-10-16 22:26:15,246 | INFO | ABLATION RUN: Chennai | w/o attention | seed=11 | 5 origins
+2026-10-16 22:26:20,782 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o attention | seed=11
+2026-10-16 22:26:20,784 | INFO | ABLATION RUN: Chennai | w/o attention | seed=22 | 5 origins
+2026-10-16 22:26:26,258 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o attention | seed=22
+2026-10-16 22:26:26,261 | INFO | ABLATION RUN: Chennai | w/o attention | seed=33 | 5 origins
+2026-10-16 22:26:31,846 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o attention | seed=33
+2026-10-16 22:26:31,848 | INFO | ABLATION RUN: Chennai | w/o attention | seed=44 | 5 origins
+2026-10-16 22:26:37,351 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o attention | seed=44
+2026-10-16 22:26:37,354 | INFO | ABLATION RUN: Chennai | w/o attention | seed=55 | 5 origins
+2026-10-16 22:26:42,808 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o attention | seed=55
+2026-10-16 22:26:42,810 | INFO | ABLATION RUN: Chennai | w/o Transformer | seed=11 | 5 origins
+2026-10-16 22:26:47,597 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o Transformer | seed=11
+2026-10-16 22:26:47,599 | INFO | ABLATION RUN: Chennai | w/o Transformer | seed=22 | 5 origins
+2026-10-16 22:26:52,437 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o Transformer | seed=22
+2026-10-16 22:26:52,441 | INFO | ABLATION RUN: Chennai | w/o Transformer | seed=33 | 5 origins
+2026-10-16 22:26:57,272 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o Transformer | seed=33
+2026-10-16 22:26:57,274 | INFO | ABLATION RUN: Chennai | w/o Transformer | seed=44 | 5 origins
+2026-10-16 22:27:02,082 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o Transformer | seed=44
+2026-10-16 22:27:02,084 | INFO | ABLATION RUN: Chennai | w/o Transformer | seed=55 | 5 origins
+2026-10-16 22:27:06,938 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o Transformer | seed=55
+2026-10-16 22:27:06,940 | INFO | ABLATION RUN: Chennai | w/o enhancement | seed=11 | 5 origins
+2026-10-16 22:27:12,424 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o enhancement | seed=11
+2026-10-16 22:27:12,425 | INFO | ABLATION RUN: Chennai | w/o enhancement | seed=22 | 5 origins
+2026-10-16 22:27:17,897 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o enhancement | seed=22
+2026-10-16 22:27:17,899 | INFO | ABLATION RUN: Chennai | w/o enhancement | seed=33 | 5 origins
+2026-10-16 22:27:23,448 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o enhancement | seed=33
+2026-10-16 22:27:23,450 | INFO | ABLATION RUN: Chennai | w/o enhancement | seed=44 | 5 origins
+2026-10-16 22:27:29,051 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o enhancement | seed=44
+2026-10-16 22:27:29,053 | INFO | ABLATION RUN: Chennai | w/o enhancement | seed=55 | 5 origins
+2026-10-16 22:27:34,663 | INFO | ABLATION CHECKPOINT saved: Chennai | w/o enhancement | seed=55
+2026-10-16 22:27:34,756 | INFO | Running Melbourne main experiments...
+2026-10-16 23:01:58,333 | INFO | Melbourne H=96 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 23:01:59,042 | INFO | RUN: Melbourne | H=96 | BLS | seed=11 | 5 rolling origins
+2026-10-16 23:01:59,541 | INFO | CHECKPOINT saved: Melbourne | H=96 | BLS | seed=11 | origins=5
+2026-10-16 23:01:59,544 | INFO | RUN: Melbourne | H=96 | BLS | seed=22 | 5 rolling origins
+2026-10-16 23:02:00,106 | INFO | CHECKPOINT saved: Melbourne | H=96 | BLS | seed=22 | origins=5
+2026-10-16 23:02:00,111 | INFO | RUN: Melbourne | H=96 | BLS | seed=33 | 5 rolling origins
+2026-10-16 23:02:00,635 | INFO | CHECKPOINT saved: Melbourne | H=96 | BLS | seed=33 | origins=5
+2026-10-16 23:02:00,640 | INFO | RUN: Melbourne | H=96 | BLS | seed=44 | 5 rolling origins
+2026-10-16 23:02:01,173 | INFO | CHECKPOINT saved: Melbourne | H=96 | BLS | seed=44 | origins=5
+2026-10-16 23:02:01,178 | INFO | RUN: Melbourne | H=96 | BLS | seed=55 | 5 rolling origins
+2026-10-16 23:02:01,724 | INFO | CHECKPOINT saved: Melbourne | H=96 | BLS | seed=55 | origins=5
+2026-10-16 23:02:01,725 | INFO | Melbourne H=96 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 23:02:01,741 | INFO | RUN: Melbourne | H=96 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 23:02:39,361 | INFO | CHECKPOINT saved: Melbourne | H=96 | Transformer | seed=11 | origins=5
+2026-10-16 23:02:39,366 | INFO | RUN: Melbourne | H=96 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 23:03:21,327 | INFO | CHECKPOINT saved: Melbourne | H=96 | Transformer | seed=22 | origins=5
+2026-10-16 23:03:21,333 | INFO | RUN: Melbourne | H=96 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 23:04:12,013 | INFO | CHECKPOINT saved: Melbourne | H=96 | Transformer | seed=33 | origins=5
+2026-10-16 23:04:12,019 | INFO | RUN: Melbourne | H=96 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 23:05:01,588 | INFO | CHECKPOINT saved: Melbourne | H=96 | Transformer | seed=44 | origins=5
+2026-10-16 23:05:01,594 | INFO | RUN: Melbourne | H=96 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 23:05:54,499 | INFO | CHECKPOINT saved: Melbourne | H=96 | Transformer | seed=55 | origins=5
+2026-10-16 23:05:54,499 | INFO | Melbourne H=96 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 23:06:13,001 | INFO | RUN: Melbourne | H=96 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 23:06:19,705 | INFO | CHECKPOINT saved: Melbourne | H=96 | A-BLAST | seed=11 | origins=5
+2026-10-16 23:06:19,711 | INFO | RUN: Melbourne | H=96 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 23:06:26,357 | INFO | CHECKPOINT saved: Melbourne | H=96 | A-BLAST | seed=22 | origins=5
+2026-10-16 23:06:26,364 | INFO | RUN: Melbourne | H=96 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 23:06:33,144 | INFO | CHECKPOINT saved: Melbourne | H=96 | A-BLAST | seed=33 | origins=5
+2026-10-16 23:06:33,152 | INFO | RUN: Melbourne | H=96 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 23:06:39,932 | INFO | CHECKPOINT saved: Melbourne | H=96 | A-BLAST | seed=44 | origins=5
+2026-10-16 23:06:39,939 | INFO | RUN: Melbourne | H=96 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 23:06:46,640 | INFO | CHECKPOINT saved: Melbourne | H=96 | A-BLAST | seed=55 | origins=5
+2026-10-16 23:06:46,701 | INFO | Melbourne H=192 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 23:06:47,427 | INFO | RUN: Melbourne | H=192 | BLS | seed=11 | 5 rolling origins
+2026-10-16 23:06:48,199 | INFO | CHECKPOINT saved: Melbourne | H=192 | BLS | seed=11 | origins=5
+2026-10-16 23:06:48,206 | INFO | RUN: Melbourne | H=192 | BLS | seed=22 | 5 rolling origins
+2026-10-16 23:06:48,879 | INFO | CHECKPOINT saved: Melbourne | H=192 | BLS | seed=22 | origins=5
+2026-10-16 23:06:48,887 | INFO | RUN: Melbourne | H=192 | BLS | seed=33 | 5 rolling origins
+2026-10-16 23:06:49,611 | INFO | CHECKPOINT saved: Melbourne | H=192 | BLS | seed=33 | origins=5
+2026-10-16 23:06:49,622 | INFO | RUN: Melbourne | H=192 | BLS | seed=44 | 5 rolling origins
+2026-10-16 23:06:50,339 | INFO | CHECKPOINT saved: Melbourne | H=192 | BLS | seed=44 | origins=5
+2026-10-16 23:06:50,348 | INFO | RUN: Melbourne | H=192 | BLS | seed=55 | 5 rolling origins
+2026-10-16 23:06:51,067 | INFO | CHECKPOINT saved: Melbourne | H=192 | BLS | seed=55 | origins=5
+2026-10-16 23:06:51,067 | INFO | Melbourne H=192 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 23:06:51,089 | INFO | RUN: Melbourne | H=192 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 23:07:32,770 | INFO | CHECKPOINT saved: Melbourne | H=192 | Transformer | seed=11 | origins=5
+2026-10-16 23:07:32,779 | INFO | RUN: Melbourne | H=192 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 23:08:40,115 | INFO | CHECKPOINT saved: Melbourne | H=192 | Transformer | seed=22 | origins=5
+2026-10-16 23:08:40,125 | INFO | RUN: Melbourne | H=192 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 23:09:45,528 | INFO | CHECKPOINT saved: Melbourne | H=192 | Transformer | seed=33 | origins=5
+2026-10-16 23:09:45,538 | INFO | RUN: Melbourne | H=192 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 23:10:45,375 | INFO | CHECKPOINT saved: Melbourne | H=192 | Transformer | seed=44 | origins=5
+2026-10-16 23:10:45,385 | INFO | RUN: Melbourne | H=192 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 23:11:43,047 | INFO | CHECKPOINT saved: Melbourne | H=192 | Transformer | seed=55 | origins=5
+2026-10-16 23:11:43,048 | INFO | Melbourne H=192 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 23:12:01,267 | INFO | RUN: Melbourne | H=192 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 23:12:08,262 | INFO | CHECKPOINT saved: Melbourne | H=192 | A-BLAST | seed=11 | origins=5
+2026-10-16 23:12:08,274 | INFO | RUN: Melbourne | H=192 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 23:12:15,160 | INFO | CHECKPOINT saved: Melbourne | H=192 | A-BLAST | seed=22 | origins=5
+2026-10-16 23:12:15,173 | INFO | RUN: Melbourne | H=192 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 23:12:22,137 | INFO | CHECKPOINT saved: Melbourne | H=192 | A-BLAST | seed=33 | origins=5
+2026-10-16 23:12:22,149 | INFO | RUN: Melbourne | H=192 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 23:12:29,002 | INFO | CHECKPOINT saved: Melbourne | H=192 | A-BLAST | seed=44 | origins=5
+2026-10-16 23:12:29,013 | INFO | RUN: Melbourne | H=192 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 23:12:36,020 | INFO | CHECKPOINT saved: Melbourne | H=192 | A-BLAST | seed=55 | origins=5
+2026-10-16 23:12:36,081 | INFO | Melbourne H=336 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 23:12:36,875 | INFO | RUN: Melbourne | H=336 | BLS | seed=11 | 5 rolling origins
+2026-10-16 23:12:37,811 | INFO | CHECKPOINT saved: Melbourne | H=336 | BLS | seed=11 | origins=5
+2026-10-16 23:12:37,825 | INFO | RUN: Melbourne | H=336 | BLS | seed=22 | 5 rolling origins
+2026-10-16 23:12:38,754 | INFO | CHECKPOINT saved: Melbourne | H=336 | BLS | seed=22 | origins=5
+2026-10-16 23:12:38,767 | INFO | RUN: Melbourne | H=336 | BLS | seed=33 | 5 rolling origins
+2026-10-16 23:12:39,716 | INFO | CHECKPOINT saved: Melbourne | H=336 | BLS | seed=33 | origins=5
+2026-10-16 23:12:39,730 | INFO | RUN: Melbourne | H=336 | BLS | seed=44 | 5 rolling origins
+2026-10-16 23:12:40,691 | INFO | CHECKPOINT saved: Melbourne | H=336 | BLS | seed=44 | origins=5
+2026-10-16 23:12:40,704 | INFO | RUN: Melbourne | H=336 | BLS | seed=55 | 5 rolling origins
+2026-10-16 23:12:41,703 | INFO | CHECKPOINT saved: Melbourne | H=336 | BLS | seed=55 | origins=5
+2026-10-16 23:12:41,703 | INFO | Melbourne H=336 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 23:12:41,731 | INFO | RUN: Melbourne | H=336 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 23:13:43,599 | INFO | CHECKPOINT saved: Melbourne | H=336 | Transformer | seed=11 | origins=5
+2026-10-16 23:13:43,616 | INFO | RUN: Melbourne | H=336 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 23:14:25,879 | INFO | CHECKPOINT saved: Melbourne | H=336 | Transformer | seed=22 | origins=5
+2026-10-16 23:14:25,897 | INFO | RUN: Melbourne | H=336 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 23:15:35,098 | INFO | CHECKPOINT saved: Melbourne | H=336 | Transformer | seed=33 | origins=5
+2026-10-16 23:15:35,115 | INFO | RUN: Melbourne | H=336 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 23:16:17,564 | INFO | CHECKPOINT saved: Melbourne | H=336 | Transformer | seed=44 | origins=5
+2026-10-16 23:16:17,581 | INFO | RUN: Melbourne | H=336 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 23:16:51,214 | INFO | CHECKPOINT saved: Melbourne | H=336 | Transformer | seed=55 | origins=5
+2026-10-16 23:16:51,215 | INFO | Melbourne H=336 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 23:17:09,926 | INFO | RUN: Melbourne | H=336 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 23:17:17,300 | INFO | CHECKPOINT saved: Melbourne | H=336 | A-BLAST | seed=11 | origins=5
+2026-10-16 23:17:17,319 | INFO | RUN: Melbourne | H=336 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 23:17:24,597 | INFO | CHECKPOINT saved: Melbourne | H=336 | A-BLAST | seed=22 | origins=5
+2026-10-16 23:17:24,616 | INFO | RUN: Melbourne | H=336 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 23:17:31,835 | INFO | CHECKPOINT saved: Melbourne | H=336 | A-BLAST | seed=33 | origins=5
+2026-10-16 23:17:31,855 | INFO | RUN: Melbourne | H=336 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 23:17:39,196 | INFO | CHECKPOINT saved: Melbourne | H=336 | A-BLAST | seed=44 | origins=5
+2026-10-16 23:17:39,216 | INFO | RUN: Melbourne | H=336 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 23:17:46,622 | INFO | CHECKPOINT saved: Melbourne | H=336 | A-BLAST | seed=55 | origins=5
+2026-10-16 23:17:46,684 | INFO | Melbourne H=720 BLS: selecting locked hyperparameter on validation data...
+2026-10-16 23:17:47,740 | INFO | RUN: Melbourne | H=720 | BLS | seed=11 | 5 rolling origins
+2026-10-16 23:17:49,138 | INFO | CHECKPOINT saved: Melbourne | H=720 | BLS | seed=11 | origins=5
+2026-10-16 23:17:49,160 | INFO | RUN: Melbourne | H=720 | BLS | seed=22 | 5 rolling origins
+2026-10-16 23:17:50,568 | INFO | CHECKPOINT saved: Melbourne | H=720 | BLS | seed=22 | origins=5
+2026-10-16 23:17:50,590 | INFO | RUN: Melbourne | H=720 | BLS | seed=33 | 5 rolling origins
+2026-10-16 23:17:52,063 | INFO | CHECKPOINT saved: Melbourne | H=720 | BLS | seed=33 | origins=5
+2026-10-16 23:17:52,088 | INFO | RUN: Melbourne | H=720 | BLS | seed=44 | 5 rolling origins
+2026-10-16 23:17:53,647 | INFO | CHECKPOINT saved: Melbourne | H=720 | BLS | seed=44 | origins=5
+2026-10-16 23:17:53,673 | INFO | RUN: Melbourne | H=720 | BLS | seed=55 | 5 rolling origins
+2026-10-16 23:17:55,221 | INFO | CHECKPOINT saved: Melbourne | H=720 | BLS | seed=55 | origins=5
+2026-10-16 23:17:55,221 | INFO | Melbourne H=720 Transformer: selecting locked hyperparameter on validation data...
+2026-10-16 23:17:55,267 | INFO | RUN: Melbourne | H=720 | Transformer | seed=11 | 5 rolling origins
+2026-10-16 23:19:01,150 | INFO | CHECKPOINT saved: Melbourne | H=720 | Transformer | seed=11 | origins=5
+2026-10-16 23:19:01,179 | INFO | RUN: Melbourne | H=720 | Transformer | seed=22 | 5 rolling origins
+2026-10-16 23:19:43,175 | INFO | CHECKPOINT saved: Melbourne | H=720 | Transformer | seed=22 | origins=5
+2026-10-16 23:19:43,206 | INFO | RUN: Melbourne | H=720 | Transformer | seed=33 | 5 rolling origins
+2026-10-16 23:20:28,911 | INFO | CHECKPOINT saved: Melbourne | H=720 | Transformer | seed=33 | origins=5
+2026-10-16 23:20:28,941 | INFO | RUN: Melbourne | H=720 | Transformer | seed=44 | 5 rolling origins
+2026-10-16 23:21:14,467 | INFO | CHECKPOINT saved: Melbourne | H=720 | Transformer | seed=44 | origins=5
+2026-10-16 23:21:14,497 | INFO | RUN: Melbourne | H=720 | Transformer | seed=55 | 5 rolling origins
+2026-10-16 23:22:11,222 | INFO | CHECKPOINT saved: Melbourne | H=720 | Transformer | seed=55 | origins=5
+2026-10-16 23:22:11,222 | INFO | Melbourne H=720 A-BLAST: selecting locked hyperparameter on validation data...
+2026-10-16 23:22:29,628 | INFO | RUN: Melbourne | H=720 | A-BLAST | seed=11 | 5 rolling origins
+2026-10-16 23:22:37,418 | INFO | CHECKPOINT saved: Melbourne | H=720 | A-BLAST | seed=11 | origins=5
+2026-10-16 23:22:37,452 | INFO | RUN: Melbourne | H=720 | A-BLAST | seed=22 | 5 rolling origins
+2026-10-16 23:22:45,323 | INFO | CHECKPOINT saved: Melbourne | H=720 | A-BLAST | seed=22 | origins=5
+2026-10-16 23:22:45,357 | INFO | RUN: Melbourne | H=720 | A-BLAST | seed=33 | 5 rolling origins
+2026-10-16 23:22:53,389 | INFO | CHECKPOINT saved: Melbourne | H=720 | A-BLAST | seed=33 | origins=5
+2026-10-16 23:22:53,426 | INFO | RUN: Melbourne | H=720 | A-BLAST | seed=44 | 5 rolling origins
+2026-10-16 23:23:01,568 | INFO | CHECKPOINT saved: Melbourne | H=720 | A-BLAST | seed=44 | origins=5
+2026-10-16 23:23:01,606 | INFO | RUN: Melbourne | H=720 | A-BLAST | seed=55 | 5 rolling origins
+2026-10-16 23:23:09,748 | INFO | CHECKPOINT saved: Melbourne | H=720 | A-BLAST | seed=55 | origins=5
+2026-10-16 23:23:11,505 | INFO | Running Melbourne rolling-origin architectural ablation...
+2026-10-16 23:33:44,940 | INFO | ABLATION RUN: Melbourne | w/o attention | seed=11 | 5 origins
+2026-10-16 23:33:51,075 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o attention | seed=11
+2026-10-16 23:33:51,077 | INFO | ABLATION RUN: Melbourne | w/o attention | seed=22 | 5 origins
+2026-10-16 23:33:57,230 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o attention | seed=22
+2026-10-16 23:33:57,232 | INFO | ABLATION RUN: Melbourne | w/o attention | seed=33 | 5 origins
+2026-10-16 23:34:03,401 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o attention | seed=33
+2026-10-16 23:34:03,404 | INFO | ABLATION RUN: Melbourne | w/o attention | seed=44 | 5 origins
+2026-10-16 23:34:09,596 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o attention | seed=44
+2026-10-16 23:34:09,598 | INFO | ABLATION RUN: Melbourne | w/o attention | seed=55 | 5 origins
+2026-10-16 23:34:15,726 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o attention | seed=55
+2026-10-16 23:34:15,729 | INFO | ABLATION RUN: Melbourne | w/o Transformer | seed=11 | 5 origins
+2026-10-16 23:34:21,162 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o Transformer | seed=11
+2026-10-16 23:34:21,165 | INFO | ABLATION RUN: Melbourne | w/o Transformer | seed=22 | 5 origins
+2026-10-16 23:34:26,655 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o Transformer | seed=22
+2026-10-16 23:34:26,657 | INFO | ABLATION RUN: Melbourne | w/o Transformer | seed=33 | 5 origins
+2026-10-16 23:34:32,113 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o Transformer | seed=33
+2026-10-16 23:34:32,115 | INFO | ABLATION RUN: Melbourne | w/o Transformer | seed=44 | 5 origins
+2026-10-16 23:34:37,485 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o Transformer | seed=44
+2026-10-16 23:34:37,488 | INFO | ABLATION RUN: Melbourne | w/o Transformer | seed=55 | 5 origins
+2026-10-16 23:34:42,890 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o Transformer | seed=55
+2026-10-16 23:34:42,893 | INFO | ABLATION RUN: Melbourne | w/o enhancement | seed=11 | 5 origins
+2026-10-16 23:34:49,013 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o enhancement | seed=11
+2026-10-16 23:34:49,015 | INFO | ABLATION RUN: Melbourne | w/o enhancement | seed=22 | 5 origins
+2026-10-16 23:34:55,179 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o enhancement | seed=22
+2026-10-16 23:34:55,181 | INFO | ABLATION RUN: Melbourne | w/o enhancement | seed=33 | 5 origins
+2026-10-16 23:35:01,470 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o enhancement | seed=33
+2026-10-16 23:35:01,475 | INFO | ABLATION RUN: Melbourne | w/o enhancement | seed=44 | 5 origins
+2026-10-16 23:35:07,668 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o enhancement | seed=44
+2026-10-16 23:35:07,671 | INFO | ABLATION RUN: Melbourne | w/o enhancement | seed=55 | 5 origins
+2026-10-16 23:35:13,872 | INFO | ABLATION CHECKPOINT saved: Melbourne | w/o enhancement | seed=55
+2026-10-16 23:35:16,112 | INFO | Generating manuscript tables...
+2026-10-16 23:35:17,062 | INFO | Generating manuscript figures...

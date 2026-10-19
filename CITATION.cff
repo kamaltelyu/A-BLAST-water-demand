@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "A-BLAST: Accelerated Broad Learning System–Transformer Hybrid Method for Long-Horizon Water-Related Time-Series Forecasting"
+message: "If you use this software, please cite this repository and the associated MethodsX article when its final bibliographic details are available."
+type: software
+authors:
+  - family-names: Kamal
+    given-names: Mustafa
+  - family-names: Shiddiqi
+    given-names: Ary Mazharuddin
+  - family-names: Nurhayati
+    given-names: Ervin
+  - family-names: Al Rasyid
+    given-names: Muhammad Udin Harun
+  - family-names: Riyadi
+    given-names: Michael Angello Qadosy
+repository-code: "https://github.com/kamaltelyu/A-BLAST-water-demand"
+license: MIT
+version: 1.0.0-methodsx
+date-released: 2026-10-19
+keywords:
+  - time-series forecasting
+  - water resources
+  - broad learning system
+  - transformer
+  - rolling-origin evaluation
+  - reproducibility

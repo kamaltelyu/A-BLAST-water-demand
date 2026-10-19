@@ -1,0 +1,46 @@
+{
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "lookback": 365,
+  "stl_period": 365,
+  "stl_robust": true,
+  "horizons": [
+    96,
+    192,
+    336,
+    720
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "n_test_origins": 5,
+  "max_train_samples": 5000,
+  "ridge_grid": [
+    1e-05,
+    0.001,
+    0.1
+  ],
+  "feature_nodes": 64,
+  "enhancement_nodes": 32,
+  "n_heads": 4,
+  "num_layers": 1,
+  "ff_dim": 128,
+  "dropout": 0.1,
+  "transformer_d_model": 32,
+  "transformer_heads": 4,
+  "transformer_layers": 1,
+  "transformer_ff_dim": 64,
+  "transformer_dropout": 0.1,
+  "transformer_lr": 0.001,
+  "transformer_batch_size": 64,
+  "transformer_max_epochs": 50,
+  "transformer_patience": 5,
+  "selection_seed": 42,
+  "inference_warmup": 3,
+  "inference_repeats": 20,
+  "ablation_horizon": 96
+}

@@ -1,0 +1,20 @@
+{
+  "Chennai": {
+    "url": "https://raw.githubusercontent.com/anubhav199/Water-Level-Prediction-in-Chennai/master/chennai_reservoir_levels.csv",
+    "path": "/content/drive/MyDrive/A-BLAST_MethodsX_Rerun_v3_2_FINAL/_ABLAST_data_cache/chennai_reservoir_levels.csv",
+    "size_bytes": 225283,
+    "sha256": "03c2add98d00f74b13b3caabb958e8e8b4e81dd5016b71bf04c839b09de32269",
+    "etag": "W/\"9a81cbf22627dfdedd1479b5f3228d6b0b6a0a3c70caa526ab594ae3f7cdb50f\"",
+    "last_modified": null,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "Melbourne": {
+    "url": "https://data-melbournewater.opendata.arcgis.com/api/download/v1/items/ab54f1679c3d4dd6b0f4030634fce861/csv?layers=0",
+    "path": "/content/drive/MyDrive/A-BLAST_MethodsX_Rerun_v3_2_FINAL/_ABLAST_data_cache/melbourne_water_daily_supply.csv",
+    "size_bytes": 1508264,
+    "sha256": "9dbce9b80e4edf5323ce74bb7c59db2ca56a89471b7a3999f77c1b138b112204",
+    "etag": "\"0x8DED2C0E1901644\"",
+    "last_modified": "Thu, 25 Jun 2026 13:51:39 GMT",
+    "content_type": "application/octet-stream"
+  }
+}

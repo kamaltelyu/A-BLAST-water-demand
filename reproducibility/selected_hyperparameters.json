@@ -1,0 +1,78 @@
+{
+  "Chennai": {
+    "96:BLS": {
+      "ridge_lambda": 0.001
+    },
+    "96:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "96:A-BLAST": {
+      "ridge_lambda": 0.1
+    },
+    "192:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "192:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "192:A-BLAST": {
+      "ridge_lambda": 0.001
+    },
+    "336:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "336:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "336:A-BLAST": {
+      "ridge_lambda": 0.001
+    },
+    "720:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "720:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "720:A-BLAST": {
+      "ridge_lambda": 1e-05
+    }
+  },
+  "Melbourne": {
+    "96:BLS": {
+      "ridge_lambda": 0.001
+    },
+    "96:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "96:A-BLAST": {
+      "ridge_lambda": 1e-05
+    },
+    "192:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "192:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "192:A-BLAST": {
+      "ridge_lambda": 1e-05
+    },
+    "336:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "336:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "336:A-BLAST": {
+      "ridge_lambda": 1e-05
+    },
+    "720:BLS": {
+      "ridge_lambda": 1e-05
+    },
+    "720:Transformer": {
+      "ridge_lambda": 0.0
+    },
+    "720:A-BLAST": {
+      "ridge_lambda": 0.001
+    }
+  }
+}

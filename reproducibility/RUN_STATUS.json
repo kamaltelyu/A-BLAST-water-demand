@@ -1,0 +1,10 @@
+{
+  "stage": "archiving",
+  "dataset": null,
+  "note": null,
+  "output_root": "/content/drive/MyDrive/A-BLAST_MethodsX_Rerun_v3_2_FINAL/A-BLAST_MethodsX_RESULTS_v3_2",
+  "resume_safe": true,
+  "protocol_version": "v3.2 fixed-model rolling-origin",
+  "checkpoint_granularity": "dataset \u00d7 horizon \u00d7 model \u00d7 seed; ablation variant \u00d7 seed",
+  "test_origins_per_horizon": 5
+}
